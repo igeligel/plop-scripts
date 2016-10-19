@@ -16,13 +16,17 @@ module.exports = (plop) => {
       type: "input",
       name: "packageName",
       message: "What is the package name of your service?"
+    }, {
+      type: "input",
+      name: "filePath",
+      message: "Where should it be moved?"
     }],
 
     // List of actions to take.
     // Here we "add" new files from our templates.
     actions: [{
       type: "add",
-      path: "./{{className}}Service.java",
+      path: "{{filePath}}" + "/{{className}}Service.java",
       templateFile: "templates/javaee/Service.java"
     }]
   });
