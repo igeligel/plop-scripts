@@ -17,7 +17,7 @@ public class {{className}}Service {
     entityManager.persist({{camelCase className}});
   }
 
-  public {{className}} findById(Integer id) {
+  public {{className}} findById(int id) {
     return entityManager.find({{className}}.class, id);
   }
 
