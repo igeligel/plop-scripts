@@ -1,0 +1,19 @@
+{
+  "name": "plop-scripts-igeligel",
+  "version": "0.0.1",
+  "description": "Plop scripts by igeligel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "plop",
+    "scripts",
+    "javaee"
+  ],
+  "author": "Kevin Peters (igeligel)",
+  "license": "MIT",
+  "scripts": {
+    "plop": "plop"
+  }
+}
