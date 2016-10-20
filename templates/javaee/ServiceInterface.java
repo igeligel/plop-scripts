@@ -21,12 +21,12 @@ public interface {{className}}ServiceInterface {
   @POST
   @Path("/")
   @Consumes({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
-  Response post{{className}}({{className}}PersistModel {{camelCase className}}PostModel);
+  Response post{{className}}({{className}}PersistModel {{camelCase className}}PersistModel);
 
   @PUT
   @Path("/")
   @Consumes({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
-  Response put{{className}}({{className}}PersistModel {{camelCase className}}PostModel);
+  Response put{{className}}({{className}}PersistModel {{camelCase className}}PersistModel);
 
   @DELETE
   @Path("/{{ resourceid className }}")
