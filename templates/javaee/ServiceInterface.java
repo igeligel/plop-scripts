@@ -17,17 +17,17 @@ public interface {{className}}ServiceInterface {
   @Path("/{{ resourceid className }}")
   @Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
   Response get{{className}}ById(@PathParam("{{camelCase className}}Id") Integer cityId);
-	
+
   @POST
   @Path("/")
   @Consumes({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
   Response post{{className}}({{className}}PersistModel {{camelCase className}}PostModel);
-	
+
   @PUT
   @Path("/")
   @Consumes({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
   Response put{{className}}({{className}}PersistModel {{camelCase className}}PostModel);
-	
+
   @DELETE
   @Path("/{{ resourceid className }}")
   Response delete{{className}}(@PathParam("{{camelCase className}}Id") Integer {{camelCase className}}Id);
