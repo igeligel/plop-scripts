@@ -16,7 +16,7 @@ public interface {{className}}ServiceInterface {
   @GET
   @Path("/{{ resourceid className }}")
   @Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
-  Response get{{className}}ById(@PathParam("{{camelCase className}}Id") Integer cityId);
+  Response get{{className}}ById(@PathParam("{{camelCase className}}Id") int cityId);
 
   @POST
   @Path("/")
@@ -30,5 +30,5 @@ public interface {{className}}ServiceInterface {
 
   @DELETE
   @Path("/{{ resourceid className }}")
-  Response delete{{className}}(@PathParam("{{camelCase className}}Id") Integer {{camelCase className}}Id);
+  Response delete{{className}}(@PathParam("{{camelCase className}}Id") int {{camelCase className}}Id);
 }
