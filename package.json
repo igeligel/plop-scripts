@@ -4,7 +4,7 @@
   "description": "Plop scripts by igeligel",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "plop": "plop"
   },
   "keywords": [
     "plop",
@@ -13,7 +13,11 @@
   ],
   "author": "Kevin Peters (igeligel)",
   "license": "MIT",
-  "scripts": {
-    "plop": "plop"
+  "devDependencies": {
+    "eslint": "^3.9.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^2.0.1",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.4.1"
   }
 }
