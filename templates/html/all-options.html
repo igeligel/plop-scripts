@@ -10,7 +10,7 @@
   <title>{{title}}</title>
   <meta name="author" content="{{author}}">
   <meta name="application-name" content="Application Name">
-  <meta name="description" content="A description of the page">
+  <meta name="description" content="{{description}}">
   <!-- Control the behavior of search engine crawling and indexing -->
   <meta name="robots" content="index,follow,noodp">
   <!-- All Search Engines -->
@@ -28,7 +28,7 @@
   <!-- Very short (10 words or less) description. Primarily for academic papers -->
   <meta name="abstract" content="{{abstract}}">
   <!-- Full domain name or web address -->
-  <meta name="url" content="https://example.com/">
+  <meta name="url" content="{{url}}">
   <meta name="directory" content="submission">
   <!-- Gives a general age rating based on sites content -->
   <meta name="rating" content="General">
@@ -45,7 +45,29 @@
   <!--<link rel="icon" href="path/to/favicon-192.png" sizes="192x192" type="image/png">-->
   <!-- end  : favicons -->
 
-  <!-- https://github.com/joshbuchea/HEAD#facebook--open-graph-->
+  <!-- begin: facebook -->
+  <meta property="fb:app_id" content="{{facebookAppId}}">
+  <meta property="og:url" content="{{url}}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:image" content="{{facebookImage}}">
+  <meta property="og:description" content="{{description}}">
+  <meta property="og:site_name" content="{{sitename}}">
+  <!-- locale can be for example: 'en_US' -->
+  <meta property="og:locale" content="{{locale}}">
+  <meta property="article:author" content="{{author}}">
+  <!-- end  : facebook -->
+
+  <!-- begin: twitter -->
+  <meta name="twitter:card" content="{{twitterSummary}}">
+  <meta name="twitter:site" content="@{{twitterAccount}}">
+  <meta name="twitter:creator" content="@{{twitterCreator}}">
+  <meta name="twitter:url" content="{{url}}">
+  <meta name="twitter:title" content="{{title}}">
+  <!-- Description should be shorter than 200 characters -->
+  <meta name="twitter:description" content="{{twitterDescription}}">
+  <meta name="twitter:image" content="{{twitterImage}}">
+  <!-- end  : twitter -->
 
   <!-- begin: style sheet area -->
   <!-- end  : style sheet area -->
