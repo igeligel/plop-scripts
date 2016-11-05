@@ -62,6 +62,28 @@ module.exports = (plop) => {
     }],
   });
 
+  plop.setGenerator('Java EE - EntityTest', {
+    description: 'Create a new entity test',
+    prompts: [{
+      type: 'input',
+      name: 'className',
+      message: 'What is the entity class name of your entity?',
+    }, {
+      type: 'input',
+      name: 'packageName',
+      message: 'What is the package name of your service?',
+    }, {
+      type: 'input',
+      name: 'filePath',
+      message: 'Where should the final file be at?',
+    }],
+    actions: [{
+      type: 'add',
+      path: '{{filePath}}/{{className}}Test.java',
+      templateFile: 'templates/javaee/EntityTest.java',
+    }],
+  });
+
   plop.setGenerator('HTML - Minimal HTML5', {
     description: 'Create a new minimal HTML5 Template',
     prompts: [{
