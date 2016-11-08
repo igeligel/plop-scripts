@@ -77,7 +77,14 @@
   <meta itemprop="image" content="{{googlePlusImage}}">
   <!-- end  : google+ -->
 
+  <!-- begin: OEmbed -->
+  <link href="{{oEmbedUrl}};format=json" rel="alternate" type="application/json+oembed" title="oEmbed Profile: JSON">
+  <link href="{{oEmbedUrl}};format=xml" rel="alternate" type="text/xml+oembed" title="oEmbed Profile: XML">
+  <!-- end  : OEmbed -->
+
   <!-- begin: style sheet area -->
+  <!-- Use href first in style tag because this improves compression when GZIP is enabled. -->
+  <!-- Example: <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> -->
   <!-- end  : style sheet area -->
 
   <!--[if lt IE 9]>
