@@ -82,6 +82,31 @@
   <link href="{{oEmbedUrl}};format=xml" rel="alternate" type="text/xml+oembed" title="oEmbed Profile: XML">
   <!-- end  : OEmbed -->
 
+  <!-- begin: Apple iOS -->
+  <!-- Smart App Banner -->
+  <meta name="apple-itunes-app" content="app-id={{appId}},affiliate-data={{affiliateId}},app-argument={{appArgument}}">
+  <!-- Disable automatic detection and formatting of possible phone numbers -->
+  <meta name="format-detection" content="telephone={{telephoneEnabled}}">
+
+  <!-- Add to Home Screen -->
+  <meta name="apple-mobile-web-app-capable" content="{{webAppCapability}}">
+  <meta name="apple-mobile-web-app-status-bar-style" content="{{statusBarStyle}}">
+  <meta name="apple-mobile-web-app-title" content="{{title}}">
+
+  <!-- Touch Icons -->
+  <link rel="apple-touch-icon" href="{{appleTouchIconPath}}">
+  <link rel="apple-touch-icon-precomposed" href="{{appleTouchIconPrecomposedPath}}">
+  <!-- iOS 8+ no longer support precomposed, only apple-touch-icon is required -->
+
+  <!-- In most cases, one 180×180px touch icon in the head is enough -->
+  <!-- Utilize the different icon sizes if you would want unique icons -->
+  <!-- determined by device. -->
+  <link rel="apple-touch-icon" sizes="57x57" href="{{appleTouchIconPath57}}">
+  <link rel="apple-touch-icon" sizes="72x72" href="{{appleTouchIconPath72}}">
+  <link rel="apple-touch-icon" sizes="114x114" href="{{appleTouchIconPath114}}">
+  <link rel="apple-touch-icon" sizes="144x144" href="{{appleTouchIconPath144}}">
+  <!-- end  : Apple iOS -->
+
   <!-- begin: style sheet area -->
   <!-- Use href first in style tag because this improves compression when GZIP is enabled. -->
   <!-- Example: <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> -->
