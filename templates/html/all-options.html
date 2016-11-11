@@ -114,6 +114,13 @@
   <link rel="mask-icon" href="{{svgIcon}}" color="{{color}}">
   <!-- end  : Apple Safari -->
 
+  <!-- begin: Google Android -->
+  <meta name="theme-color" content="{{colorCode}}">
+  <meta name="mobile-web-app-capable" content="{{isWebAppCapable}}">
+  <meta name="google-play-app" content="{{appId}}={{packageName}}">
+  <link rel="alternate" href="android-app://{{packageName}}/http/{{url}}">
+  <!-- end  : Google Android -->
+
   <!-- begin: style sheet area -->
   <!-- Use href first in style tag because this improves compression when GZIP is enabled. -->
   <!-- Example: <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> -->
